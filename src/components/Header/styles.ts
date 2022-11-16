@@ -1,28 +1,16 @@
-import { StyleSheet } from "react-native"
+import styled from "styled-components/native";
 
-export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#42445A',
-        display: "flex",
-        flexDirection: 'column',
-        padding: 30
-    },
-    icons: {
-        width: '100%',
-        height: 20,
-        flexDirection: 'row',
-        marginTop: 10
-    },
-    iconsText: {
-        width: '25%'
-    },
-    full: {
-         flex: 1,
-         width: "100%",
-         flexDirection: "row",
-         backgroundColor: "blue",
-         marginTop: 10,
-         borderRadius: 10 
-    }
-})
+export const Container = styled.View`
+  flex-direction: row;
+  padding: 15px;
+  background: #28333f;
+  justify-content: space-between;
+`;
+
+export const Icons = styled.View`
+flex-direction: row;
+justify-content: space-between;
+width: 100px;
+`
+
+

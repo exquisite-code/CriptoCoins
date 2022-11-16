@@ -1,26 +1,17 @@
 import { Text, View } from "react-native";
-import { styles } from "./styles";
+import { Feather, Ionicons, Fontisto   } from "@expo/vector-icons";
+import { Container, Icons } from "./styles";
 
 export function Header() {
-    return (
-        <View style={styles.container}>
+  return (
+    <Container>
+      <Text style={{flexDirection:"row", color:"#fff"}}>HOME</Text>
 
-           <View style={styles.icons}>
-            <Text style={styles.iconsText}>HOME</Text>
-            <Text style={styles.iconsText}>SININHO</Text>
-            <Text style={styles.iconsText}>PERFIL</Text>
-            <Text style={styles.iconsText}>3PONTOS</Text>
-            </View>
-
-            <View style={styles.full}>
-            <Text>TEXTO</Text>
-            <Text>TEXTO</Text>
-            <Text>TEXTO</Text>
-            </View>
-
-
-     
-     </View>
-    );
-  }
-  
+      <Icons>
+        <Feather name="user" size={22} color={"#fff"} />
+        <Ionicons name="ios-menu-outline" size={22} color={"#fff"}/>
+        <Fontisto name="bell" size={22} color={"#fff"} />
+      </Icons>
+    </Container>
+  );
+}
